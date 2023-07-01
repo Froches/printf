@@ -33,6 +33,16 @@ int _printf(const char *format, ...)
 						length += _puts(str);
 						break;
 					}
+				case 'd':
+				case 'i':
+					{
+						int value = va_arg(args, int);
+						char buffer[20];
+						int len = _itoa(value, buffer, 10);
+						length += _puts(buffer);
+						length += len;
+						break;
+					}
 				case '%':
 					{
 						length += _putchar('%');
