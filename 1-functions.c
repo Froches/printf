@@ -39,6 +39,7 @@ int _strlen(const char *str)
  * reverse - function that reverses a string
  * @str: string to reverse
  * @length: length of string
+ * return: returns 1 on success.
  */
 int reverse(char* str, int length)
 {
@@ -60,6 +61,7 @@ int reverse(char* str, int length)
  * @value: value to convert
  * @str: string
  * @base: number base
+ * return: returns 0 on success
  */
 int _itoa(int value, char* str, int base)
 {
